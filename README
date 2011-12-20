@@ -1,0 +1,24 @@
+Telegraph - A simple one-to-many notification server written in Go.
+
+The server listens on two ports -- one where the notifications are posted,
+and one for the clients who wants to receive the notifications.
+Notifications are broadcasted to all clients.
+
+
+To start the server type the following:
+./telegraph -l :9090 -L :9091
+
+-l defines the port where notifications are posted.
+-L defines the port where clients connect.
+
+
+Clients connect using raw sockets.
+Example: telnet localhost 9091
+
+
+Notifications are posted using a HTTP POST request to /transmission
+Example: curl http://localhost:9090/transmission -d "Hello World"
+
+
+Demo:
+http://www.youtube.com/watch?v=r9dREqmh2c0
