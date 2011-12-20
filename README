@@ -5,7 +5,7 @@ and one for the clients who wants to receive the notifications.
 Notifications are broadcasted to all clients.
 
 
-To start the server type the following:
+To start the server:
 ./telegraph -l :9090 -L :9091
 
 -l defines the listening address where notifications are posted.
