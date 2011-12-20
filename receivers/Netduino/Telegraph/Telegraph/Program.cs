@@ -12,7 +12,7 @@ namespace Telegraph {
         public static void Main() {
             Receiver r = new Receiver();
             r.SetTransmissionHandler(new ShiftBriteHandler());
-            r.ConnectToTransmitter("localhost", 9091);
+            r.ConnectToTransmitter("10.0.0.66", 9091);
             r.ListenForTransmissions();
         }
     }
