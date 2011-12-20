@@ -8,8 +8,8 @@ Notifications are broadcasted to all clients.
 To start the server type the following:
 ./telegraph -l :9090 -L :9091
 
--l defines the port where notifications are posted.
--L defines the port where clients connect.
+-l defines the listening address where notifications are posted.
+-L defines the listening address where clients connect.
 
 
 Clients connect using raw sockets.
