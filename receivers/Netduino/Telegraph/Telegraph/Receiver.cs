@@ -69,7 +69,7 @@ namespace Telegraph {
             catch (SocketException e) {
                 Debug.Print("Unable to connect: " + e.Message);
                 Debug.Print("Waiting 60 seconds before retry...");
-                Thread.Sleep(10 * 1000);
+                Thread.Sleep(60 * 1000);
                 goto Start;
             }
             Debug.Print("Connected!");
